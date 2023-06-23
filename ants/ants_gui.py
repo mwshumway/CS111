@@ -23,8 +23,6 @@ import graphics
 from graphics import shift_point
 from ucb import *
 from math import pi
-import math
-import os
 import random
 
 STRATEGY_SECONDS = 1
@@ -53,7 +51,7 @@ INSECT_FILES = {'Worker': 'ant_harvester.gif',
 }
 INSECT_BASE = 'img/'
 INSECT_FILES = {k: INSECT_BASE + v for k, v in INSECT_FILES.items()}
-TUNNEL_FILE = 'img/tunnel.gif'
+TUNNEL_FILE = '../img/tunnel.gif'
 ANT_IMAGE_WIDTH = 65
 ANT_IMAGE_HEIGHT = 71
 BEE_IMAGE_WIDTH = 58

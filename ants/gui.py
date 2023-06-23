@@ -1,6 +1,5 @@
 import ants
 import ants_strategies
-import utils
 import state
 import json
 import distutils.core
@@ -14,7 +13,7 @@ from time import sleep
 from ucb import *
 
 VERSION = 1.2
-ASSETS_DIR = "assets/"
+ASSETS_DIR = "../assets/"
 INSECT_DIR = "insects/"
 STRATEGY_SECONDS = 3
 INSECT_FILES = {
@@ -340,7 +339,7 @@ def get_update(url, version):
         for d in dirs:
             distutils.dir_util.copy_tree(d, "../../" + d)
         # Delete our temp directory
-        os.chdir('../..')
+        os.chdir('../../..')
         print("Cleaning up...")
         shutil.rmtree(version)
         print("Update complete")
@@ -361,7 +360,6 @@ class CustomThreadingTCPServer(socketserver.ThreadingTCPServer):
 @main
 def run(*args):
     # Start webserver
-    import socketserver
     import webbrowser
     import sys
     PORT = 8000

@@ -39,7 +39,7 @@ def print_expired_insects(self, rv, *args):
     """Post-wrapper for Insect.reduce_health, and will print a message if the
     insect has expired (health reduced to 0).
 
-    >>> from ants import Insect, Bee, ThrowerAnt, Place
+    >>> from ants.ants import Insect, Bee, ThrowerAnt, Place
     >>> Insect.reduce_health = class_method_wrapper(Insect.reduce_health,
     ...         pre=print_expired_insects)
     >>> place = Place('Test')
@@ -61,7 +61,7 @@ def print_expired_insects(self, rv, *args):
 def print_thrower_target(self, rv, *args):
     """Prints the target of a ThrowerAnt, if the ThrowerAnt found a target.
 
-    >>> from ants import *
+    >>> from ants.ants import *
     >>> beehive = Hive(AssaultPlan())
     >>> dimensions = (1, 9)
     >>> gamestate = GameState(None, beehive, ant_types(), dry_layout, dimensions)
