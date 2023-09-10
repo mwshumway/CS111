@@ -1,8 +1,6 @@
-# CS111
-Projects from CS111
+# UC Berkely Python 
 
-
-CS111 is a Python Coding Class. 
+These projects are taken from UC Berkely's CS61A course.
 
 This folder consists of the following projects:
 1. Hog (dice rolling 1 vs 1 game - focused on recursive techniques)
